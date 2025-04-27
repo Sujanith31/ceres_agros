@@ -17,7 +17,7 @@ import faceBook from '../assets/images/facebook-app-symbol.png'
             </div>
             <div class="subscription-input-container">
                 <input type="text" placeholder="ceresAgro@gmail.com" class="registeration-input">
-                <button class="register-button">Submit</button>
+                <button class="register-button">Submitting</button>
             </div>
             </div>
             <div class="demoFooter-registration-image-right">
