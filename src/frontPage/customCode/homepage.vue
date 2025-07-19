@@ -37,7 +37,7 @@
 .heading{
     color: white;
     background-color: rgb(255, 252, 252);
-    position: absolute;
+    /* position: absolute; */
     z-index: 999;
     width: 100%;   
 }

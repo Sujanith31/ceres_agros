@@ -91,7 +91,7 @@ import ThreePs from '@/assets/img/threePs.jpg'
   align-items: center;
   width: 100%;
   height: 700px;
-  background-color: aqua;
+  background-color: whitesmoke;
 }
 .homepage-imagecontainer {
   display: flex;

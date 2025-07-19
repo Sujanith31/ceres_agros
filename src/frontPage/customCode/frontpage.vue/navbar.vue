@@ -53,6 +53,9 @@ const menuOpen = ref(false)
 .navBar-links {
   width: 600px;
   transition: right 0.3s;
+  position: static;
+  right: auto;
+  /* Hide links on mobile by default */
 }
 .navBar-links-container {
   display: flex;
@@ -122,17 +125,24 @@ a:hover {
     right: -100vw;
     width: 100vw;
     background: whitesmoke;
-    transition: right 0.3s;
+    transition:
+      right 0.3s,
+      opacity 0.3s,
+      visibility 0.3s;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
     z-index: 99;
     height: calc(100vh - 70px);
-    display: flex;
+    display: none; /* Completely removes from layout */
     align-items: flex-start;
     flex-direction: column;
     padding-top: 24px;
   }
   .navBar-links.open {
     right: 0;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: flex; /* Show when open */
   }
   .navBar-links-container {
     flex-direction: column;

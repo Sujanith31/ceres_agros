@@ -222,7 +222,7 @@ import laptop from "@/assets/img/macbookb.jpg"
   align-items: center;
   width: 100%;
   height: 700px;
-  background-color: aqua;
+  background-color: whitesmoke;
 }
 .homepage-imagecontainer {
   display: flex;

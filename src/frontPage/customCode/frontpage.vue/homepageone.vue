@@ -37,7 +37,7 @@ import HomeCardPic from '@/assets/img/home-card-pic1.jpg'
   align-items: center;
   width: 100%;
   height: 700px;
-  background-color: aqua;
+  background-color: whitesmoke;
 }
 .homepage-imagecontainer {
   display: flex;
@@ -63,10 +63,56 @@ import HomeCardPic from '@/assets/img/home-card-pic1.jpg'
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
+  width: 300px;
+}
+.homepage-button-container button {
+  /* width: 300px !important; */
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.homepage-button-container button:hover {
+  background: #388e3c;
+  color: #fff;
+}
+.homepage-text-container h2 {
+  color: #388e3c;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  background: transparent;
+  /* Gradient text effect */
+  background-image: linear-gradient(90deg, #e8f5e9 60%, #4caf50 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  transition: background 0.3s;
 }
 .homepage-text-container p {
-  width: 800px;
+  width: 100%;
+  font-size: 1.15rem;
+  color: #344767;
+  font-weight: 500;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  background: #fff;
+  border-left: 6px solid #4caf50;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.06);
+  transition: border-color 0.3s;
 }
 .homepage-counter-container {
   background-color: whitesmoke;
@@ -88,13 +134,26 @@ import HomeCardPic from '@/assets/img/home-card-pic1.jpg'
   font-weight: 800;
 }
 .counter-heading {
-  color: #344767;
+  color: #388e3c;
   font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, #e8f5e9 60%, #4caf50 100%);
+  padding: 6px 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.08);
 }
 .counter-para {
-  color: grey;
+  color: #344767;
   text-align: center;
   font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  background: #fff;
+  border-left: 6px solid #4caf50;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.06);
 }
 
 @media (max-width: 900px) {
@@ -109,9 +168,15 @@ import HomeCardPic from '@/assets/img/home-card-pic1.jpg'
     gap: 14px !important;
     padding: 0 10px;
   }
+  .homepage-text-container h2 {
+    font-size: 1.3rem !important;
+    padding: 4px 8px;
+  }
   .homepage-text-container p {
     width: 100% !important;
-    font-size: 1rem;
+    font-size: 1rem !important;
+    padding: 8px 10px;
+    border-left-width: 4px;
   }
   .homepage-button-container {
     width: 100% !important;
@@ -140,8 +205,14 @@ import HomeCardPic from '@/assets/img/home-card-pic1.jpg'
     padding: 0 4px;
     font-size: 1rem;
   }
+  .homepage-text-container h2 {
+    font-size: 1rem !important;
+    padding: 2px 4px;
+  }
   .homepage-text-container p {
-    font-size: 0.95rem !important;
+    font-size: 0.92rem !important;
+    padding: 6px 4px;
+    border-left-width: 3px;
   }
   .homepage-counter {
     width: 100vw !important;

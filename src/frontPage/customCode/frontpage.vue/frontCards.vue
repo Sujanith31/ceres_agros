@@ -112,8 +112,10 @@ const isFlipped = ref(false)
   backface-visibility: hidden;
 }
 .flip-card-front {
-  /* front card styles */
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
+  background-image: url('@/assets/img/background-pic-g2.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
   color: #fff;
   border-radius: 12px;
   overflow: hidden;
@@ -121,10 +123,32 @@ const isFlipped = ref(false)
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 32px 18px;
+  box-sizing: border-box;
+  /* position: relative; */
+}
+
+/* Optional: Add a dark overlay for better text readability */
+.flip-card-front::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(76, 175, 80, 0.5); /* Green overlay, adjust opacity as needed */
+  border-radius: 12px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Ensure content is above overlay */
+.frontcard-fistlook,
+.frontcard-fistlook-text,
+.frontcard-secondLook {
+  position: relative;
+  z-index: 2;
 }
 .flip-card-back {
   transform: rotateY(180deg);
-  background-image: url('@/assets/img/'); /* Replace with your image path */
+  background-image: url('@/assets/img/background-pic-g2.jpg'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   border-radius: 12px;
@@ -243,6 +267,109 @@ const isFlipped = ref(false)
     width: 100%;
     font-size: 1rem;
     padding: 10px 0;
+  }
+}
+
+.frontcard-fistlook {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+}
+
+.frontcard-fistlook-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.frontcard-fistlook-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.frontcard-firstLook-para {
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.frontcard-secondLook {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.frontcard-secondlook-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.frontcard-secondlook-para {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.frontcard-secondlook-button {
+  margin-top: 8px;
+  background: #fff;
+  color: #4caf50;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.frontcard-secondlook-button:hover {
+  background: #4caf50;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .flip-card-front {
+    padding: 18px 8px;
+  }
+  .frontcard-fistlook-heading {
+    font-size: 1.2rem;
+  }
+  .frontcard-firstLook-para,
+  .frontcard-secondlook-para {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .flip-card-front {
+    padding: 8px 2px;
+  }
+  .frontcard-fistlook-heading {
+    font-size: 1rem;
+  }
+  .frontcard-secondlook-heading {
+    font-size: 0.95rem;
+  }
+  .frontcard-firstLook-para,
+  .frontcard-secondlook-para {
+    font-size: 0.95rem;
   }
 }
 </style>
