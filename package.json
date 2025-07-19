@@ -1,5 +1,6 @@
 {
   "name": "ceres-agro",
+  "homepage": "https://Sujanith31.github.io/ceres-agro/",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,9 +10,12 @@
     "preview": "vite preview",
     "test:unit": "vitest",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "predeploy": "npm run build",
+    "deploy":" gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
