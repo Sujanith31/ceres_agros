@@ -1,6 +1,6 @@
 {
   "name": "ceres-agro",
-  "homepage": "https://Sujanith31.github.io/ceres-agro/",
+  "homepage": "https://Sujanith31.github.io/ceres-agros/",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -12,7 +12,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "predeploy": "npm run build",
-    "deploy":" gh-pages -d dist"
+    "deploy": " gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
