@@ -1,10 +1,12 @@
 <script setup>
-// import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router'
 // import NavBar from '../src/frontPage/demoNav.vue';
 // import MainPage from '../src/frontPage/demoPage.vue';
 // import mainPage2 from '../src/frontPage/demoPage2.vue';
 // import demoFooter from '../src/frontPage/demoFooter.vue';
-import homepage from './frontPage/homepage.vue';
+// import homepage from './frontPage/homepage.vue';
+import homePage from './frontPage/customCode/homepage.vue';
+import ourstory from './frontPage/customCode/outStoryPage.vue';
 // import demoBags from './frontPage/demo-bags.vue';
 
 </script>
@@ -15,7 +17,7 @@ import homepage from './frontPage/homepage.vue';
     <NavBar/>
   </div> -->
   <div>
-    <homepage/>
+    <!-- <homePage/> -->
   </div>
   <!-- <div class="MainPage">
     <MainPage/>
@@ -29,7 +31,11 @@ import homepage from './frontPage/homepage.vue';
   <!-- <div class="demo-bags">
     <demoBags/>
   </div> -->
-  <RouterView />
+  <!-- <RouterView /> -->
+   <div>
+    <!-- <ourstory/> -->
+   </div>
+  <router-view />
 </template>
 
 <style scoped>
