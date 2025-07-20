@@ -11,7 +11,7 @@
 
         <div class="homepage-button-container">
           <button>Read more</button>
-          <button>Get Started</button>
+          <!-- <button>Get Started</button> -->
         </div>
       </div>
     </div>
@@ -103,11 +103,11 @@ import HomeCardPic from '@/assets/img/home-card-pic1.jpg'
 .homepage-text-container p {
   width: 100%;
   font-size: 1.15rem;
-  color: #344767;
+  color: #fff;
   font-weight: 500;
   margin-bottom: 12px;
   line-height: 1.6;
-  background: #fff;
+  /* background: #fff; */
   border-left: 6px solid #4caf50;
   padding: 12px 18px;
   border-radius: 8px;

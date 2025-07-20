@@ -221,9 +221,14 @@ const isFlipped = ref(false)
   }
   .flip-card {
     width: 100% !important;
-    max-width: 370px;
+    max-width: none !important;
     height: 400px !important;
     margin: 0 auto 24px auto;
+    overflow: hidden; /* Add this */
+  }
+  .flip-card-inner {
+    width: 100% !important;
+    height: 100% !important;
   }
   .front-rightCard-continer {
     width: 100% !important;
@@ -248,8 +253,14 @@ const isFlipped = ref(false)
 
 @media (max-width: 600px) {
   .flip-card {
-    max-width: 100% !important;
+    width: 100% !important;
+    max-width: none !important;
     padding: 12px 4px;
+    overflow: hidden; /* Add this */
+  }
+  .flip-card-inner {
+    width: 100% !important;
+    height: 100% !important;
   }
   .front-rightCard-continer {
     padding: 0 4px;
