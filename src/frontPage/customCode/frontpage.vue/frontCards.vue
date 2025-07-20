@@ -383,4 +383,8 @@ const isFlipped = ref(false)
     font-size: 0.95rem;
   }
 }
+
+.flipped .flip-card-front {
+  display: none;
+}
 </style>
