@@ -52,12 +52,12 @@
           </ul>
         </div>
         <div class="card-two-image">
-          <img :src="picOne" alt="" />
+          <img :src="ThreePs" alt="" />
         </div>
       </div>
       <div class="sequence-card-three">
         <div class="card-three-image">
-          <img :src="picOne" alt="" />
+          <img :src="picThree" alt="" />
         </div>
         <div class="card-three-text">
           <h3>Our Core Values</h3>
@@ -113,6 +113,20 @@ import ThreePs from '@/assets/img/threePs.jpg'
   gap: 20px;
   width: 80%;
 }
+.homepage-text-container h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #388e3c;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #388e3c 10%, #8bc34a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 2;
+}
 .homepage-button-container {
   display: flex;
   justify-content: space-between;
@@ -120,7 +134,18 @@ import ThreePs from '@/assets/img/threePs.jpg'
   width: 200px;
 }
 .homepage-text-container p {
-  width: 800px;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  background: rgba(255,255,255,0.20);
+  border-left: 6px solid #8bc34a;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(76,175,80,0.06);
+  position: relative;
+  z-index: 2;
 }
 .frontrightcard-bottom-one {
   width: 280px;
@@ -137,6 +162,8 @@ import ThreePs from '@/assets/img/threePs.jpg'
   color: black;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .sequence-cards img {
@@ -156,6 +183,11 @@ import ThreePs from '@/assets/img/threePs.jpg'
 .card-two-text,
 .card-one-text {
   width: 500px;
+}
+.card-one-text h3,.card-two-text h3,.card-three-text h3{
+  color: #388e3c;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 @media (max-width: 900px) {
   .HomePage-Container,

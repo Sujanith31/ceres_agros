@@ -9,7 +9,7 @@
             improve soil health, and support eco-friendly agriculture. With expert guidance and
             proven results, we're your partner for agricultural success.
           </p>
-          <button>Join Our Family</button>
+          <!-- <button>Join Our Family</button> -->
         </div>
       </div>
     </div>

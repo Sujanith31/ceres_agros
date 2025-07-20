@@ -113,7 +113,7 @@ const isFlipped = ref(false)
 }
 .flip-card-front {
   background-color: #4caf50;
-  background-image: url('@/assets/img/background-pic-g2.jpg'); /* Replace with your image path */
+  background-image: url('@/assets/img/balcony-garden-1.jpeg'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -125,6 +125,7 @@ const isFlipped = ref(false)
   align-items: center;
   padding: 32px 18px;
   box-sizing: border-box;
+  padding: 0px 10px !important;
   /* position: relative; */
 }
 
@@ -273,6 +274,11 @@ const isFlipped = ref(false)
   .frontrightcard-bottom-one,
   .frontrightcard-bottom-two {
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .frontcard-secondlook-button {
     width: 100%;

@@ -1,7 +1,8 @@
 <template>
   <div class="footer-conatiner">
     <div>
-      <img :src="logo" alt="" />
+      <!-- <img :src="logo" alt="" /> -->
+      <RouterLink :to="{name:'homepage'}"> <img :src="logo" alt="" /></RouterLink>
     </div>
     <div class="footer-links">
       <RouterLink :to="{ name: 'Aboutus' }">About us</RouterLink>
@@ -26,7 +27,8 @@ import { RouterLink } from 'vue-router'
   justify-content: space-evenly;
   align-items: center;
   background-color: whitesmoke;
-  padding-top: 50px;
+  padding-top: 50px 20px;
+  margin-top: 20px;
 }
 .footer-conatiner img {
   width: 100px;
@@ -80,14 +82,15 @@ import { RouterLink } from 'vue-router'
     padding-top: 18px !important;
   }
   .footer-links {
-    gap: 10px;
-    padding-left: 4px;
+    gap: 30px;
+    padding-left: 14px;
     font-size: 0.95rem;
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    flex-direction: row !important;
+    align-items: center !important;
   }
   .footer-conatiner img {
     width: 60px !important;
+    margin-left: 10px;
   }
   .disclamer p {
     font-size: 0.95rem;

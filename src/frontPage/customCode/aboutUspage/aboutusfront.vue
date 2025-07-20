@@ -16,7 +16,7 @@
 
         <div class="homepage-button-container">
           <button>Read more</button>
-          <button>Get Started</button>
+          <!-- <button>Get Started</button> -->
         </div>
       </div>
     </div>
@@ -131,7 +131,7 @@
             our extensive resources and find the precise insights you need to optimize your farm's
             potential.
           </p>
-          <button>FIND OUT MORE</button>
+          <!-- <button>FIND OUT MORE</button> -->
         </div>
       </div>
     </div>
@@ -224,7 +224,16 @@ import laptop from "@/assets/img/macbookb.jpg"
   height: 700px;
   background-color: whitesmoke;
 }
+.Heading-aboutus h2{
+  color: #344767;
+  font-weight: 700;
+}
+.aboutus-content-one h3, .aboutus-content-two h3, .aboutus-content-three h3{
+  color: #344767;
+  font-weight: 600;
+}
 .homepage-imagecontainer {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,6 +245,16 @@ import laptop from "@/assets/img/macbookb.jpg"
   background-repeat: no-repeat;
   background-size: cover;
 }
+.homepage-imagecontainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 0.5 = 50% opacity */
+  z-index: 1;
+}
 .homepage-text-container {
   display: flex;
   flex-direction: column;
@@ -244,6 +263,20 @@ import laptop from "@/assets/img/macbookb.jpg"
   gap: 20px;
   width: 80%;
 }
+.homepage-text-container h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #388e3c;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #ffffff 60%, #8bc34a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 2;
+}
 .homepage-button-container {
   display: flex;
   justify-content: space-between;
@@ -251,7 +284,35 @@ import laptop from "@/assets/img/macbookb.jpg"
   width: 200px;
 }
 .homepage-text-container p {
-  width: 800px;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  background: rgba(255,255,255,0.20);
+  border-left: 6px solid #8bc34a;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(76,175,80,0.06);
+  position: relative;
+  z-index: 2;
+}
+.homepage-button-container button {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  z-index: 999;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.homepage-button-container button:hover {
+  background: #388e3c;
+  color: #fff;
+  transform: translateY(-2px);
 }
 .heading-section-aboutus {
   background-color: whitesmoke;
@@ -328,6 +389,12 @@ import laptop from "@/assets/img/macbookb.jpg"
 .aboutus-card img{
     width: 400px;
 }
+.aboutus-card h3{
+  font-weight: 600;
+  color: #344767;
+  font-size: large;
+  margin: 5px 0;
+}
 .aboutus-cards-container{
     width: 90%;
     display: flex;
@@ -366,6 +433,15 @@ import laptop from "@/assets/img/macbookb.jpg"
     justify-content: space-between;
     align-items: center;
 }
+.visinories-cards h3{
+  color: #388e3c;
+  font-weight: 700;
+  font-size: larger;
+}
+.visinories-cards h4{
+  color: grey;
+  font-weight: 600;
+}
 .visinories-card-one,
 .visinories-card-two,
 .visinories-card-three{
@@ -391,6 +467,7 @@ import laptop from "@/assets/img/macbookb.jpg"
     align-items: center;
     gap: 30px;
     margin-top: 20px;
+    padding: 20px;
 
 }
 .future-farming-card-container{
@@ -400,11 +477,31 @@ import laptop from "@/assets/img/macbookb.jpg"
     align-items: center;
     background-color: white;
     color: black;
+    padding: 10px;
 }
 .future-farming-card-container img{
     width: 350px;
     /* height: 400px; */
     border-radius: 20px;
+}
+.future-farming-card-container button{
+  color: #388e3c;
+  background-color: white;
+  border: 2px solid #388e3c;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5px;
+
+}
+.future-farming-card-container button:hover{
+  color: white;
+  background-color: #388e3c;
+  border: 2px solid white;
+  cursor:pointer;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5px;
+
 }
 .future-farming-container{
     width: 90%;
@@ -412,6 +509,34 @@ import laptop from "@/assets/img/macbookb.jpg"
     justify-content: center;
     align-items: center;
     gap: 50px;
+}
+.counter-one, .counter-two, .counter-three{
+  text-align: center;
+}
+.counter-one h3, .counter-two h3 , .counter-three h3{
+  color: #8bc34a;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.counter-one h4, .counter-two h4, .counter-three h4{
+  color:  #344767;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.input-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  margin-top: 10px;
+}
+.input-container input{
+  border: none;
+  border-bottom: 1px solid #388e3c;
+  background: transparent;
+  outline: none;
+  padding: 8px 4px;
+  font-size: 16px;
 }
 @media (max-width: 1200px) {
   .aboutus-cards-container,
@@ -440,6 +565,17 @@ import laptop from "@/assets/img/macbookb.jpg"
   .visinories-card-three {
     width: 100% !important;
     min-width: 0 !important;
+  }
+  .closing-image img{
+    margin: 20px 0px;
+    width: 80%;
+  }
+  .closing-image{
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -508,10 +644,16 @@ import laptop from "@/assets/img/macbookb.jpg"
   .counter-two,
   .counter-three {
     width: 100% !important;
-    text-align: left;
+    text-align: center;
+
+  }
+  .counter-one h3, .counter-two h3, .counter-three h3{
+    color: #8bc34a;
+    font-weight: 700;
+    font-size: 1.5rem;
   }
   .future-farming-container {
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
     gap: 24px !important;
     width: 100% !important;
   }

@@ -70,7 +70,7 @@ import logoFour from "@/assets/img/logo-Four.jpg";
   color: white;
   background-color: #0f9d58;
   padding: 5px;
-  width: 180px;
+  width: 280px !important;
   border-radius: 6px;
   font-size: 18px;
   font-weight: 600;
@@ -138,7 +138,7 @@ import logoFour from "@/assets/img/logo-Four.jpg";
   }
   .homePageFour-text-container-h4 {
     font-size: 1rem !important;
-    width: 120px !important;
+    width: 280px !important;
     padding: 4px;
   }
   .homePageFour-image-containers {
@@ -183,17 +183,17 @@ import logoFour from "@/assets/img/logo-Four.jpg";
   }
   .homePageFour-text-container-h4 {
     font-size: 0.95rem !important;
-    width: 90px !important;
+    width: 200px !important;
     padding: 3px;
   }
   .homepageFour-image-topc img,
   .homepageFour-image-bottomc img {
-    width: 80px !important;
+    width: 100px !important;
     max-width: 80vw;
   }
   .homepageFour-para-conatiner {
     width: 100vw !important;
-    padding: 0 4px;
+    padding: 20px 20px;
   }
   .homepageFour-para-conatiner h3 {
     font-size: 1rem !important;

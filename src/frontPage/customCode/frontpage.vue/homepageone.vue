@@ -38,6 +38,7 @@ import HomeCardPic from '@/assets/img/home-card-pic1.jpg'
   width: 100%;
   height: 700px;
   background-color: whitesmoke;
+  /* padding: 20px !important; */
 }
 .homepage-imagecontainer {
   display: flex;
@@ -58,12 +59,14 @@ import HomeCardPic from '@/assets/img/home-card-pic1.jpg'
   align-items: start;
   gap: 20px;
   width: 80%;
+  padding: 20px;
 }
 .homepage-button-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 300px;
+  /* padding-left: 20px; */
 }
 .homepage-button-container button {
   /* width: 300px !important; */
@@ -174,7 +177,7 @@ import HomeCardPic from '@/assets/img/home-card-pic1.jpg'
   }
   .homepage-text-container p {
     width: 100% !important;
-    font-size: 1rem !important;
+    font-size: .9rem !important;
     padding: 8px 10px;
     border-left-width: 4px;
   }
@@ -202,7 +205,7 @@ import HomeCardPic from '@/assets/img/home-card-pic1.jpg'
   }
   .homepage-text-container {
     width: 100vw !important;
-    padding: 0 4px;
+    padding: 0 20px;
     font-size: 1rem;
   }
   .homepage-text-container h2 {
@@ -210,7 +213,7 @@ import HomeCardPic from '@/assets/img/home-card-pic1.jpg'
     padding: 2px 4px;
   }
   .homepage-text-container p {
-    font-size: 0.92rem !important;
+    font-size: 0.82rem !important;
     padding: 6px 4px;
     border-left-width: 3px;
   }

@@ -78,6 +78,19 @@ p {
   color: whitesmoke !important;
   font-size: 21px;
 }
+button{
+  background-color:#4caf50;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 10px;
+  color: white;
+  margin-top: 20px;
+}
+button:hover{
+  background-color: #388e3c;
+  color: white;
+  cursor: pointer;
+}
 
 @media (max-width: 900px) {
   .PageThree-container {
@@ -106,19 +119,19 @@ p {
   .pageThree-text-container {
     width: 100vw !important;
     height: max-content !important;
-    padding: 0 4px;
+    padding: 10px 10px;
   }
   .pageThree-innertext-container {
     padding: 8px !important;
   }
   h2 {
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
   }
   h3 {
-    font-size: 0.95rem !important;
+    font-size: 0.85rem !important;
   }
   p {
-    font-size: 0.95rem !important;
+    font-size: 0.75rem !important;
   }
 }
 </style>
