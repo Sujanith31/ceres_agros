@@ -169,7 +169,7 @@ import HomeCardPic from '@/assets/img/home-card-pic1.jpg'
     padding: 0 10px;
   }
   .homepage-text-container h2 {
-    font-size: 1.3rem !important;
+    font-size: 1.7rem !important;
     padding: 4px 8px;
   }
   .homepage-text-container p {
@@ -206,7 +206,7 @@ import HomeCardPic from '@/assets/img/home-card-pic1.jpg'
     font-size: 1rem;
   }
   .homepage-text-container h2 {
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
     padding: 2px 4px;
   }
   .homepage-text-container p {
