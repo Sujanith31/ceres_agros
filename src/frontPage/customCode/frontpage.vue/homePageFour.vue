@@ -11,18 +11,18 @@
     <div class="homePageFour-image-containers">
       <div class="homePageFour-images">
         <div class="homepageFour-image-topc">
-          <RouterLink :to="{name: 'OurStory'}">
+          <RouterLink :to="{ name: 'OurStory' }">
             <img :src="logoOne" alt="Ceres Agros Fertilizer" />
           </RouterLink>
-          <RouterLink :to="{name: 'Aboutus'}">
+          <RouterLink :to="{ name: 'Aboutus' }">
             <img :src="logoTwo" alt="Ceres Agros Fertilizer" />
           </RouterLink>
         </div>
         <div class="homepageFour-image-bottomc">
-          <RouterLink :to="{name:'ContactUs'}">
+          <RouterLink :to="{ name: 'ContactUs' }">
             <img :src="logoThree" alt="Ceres Agros Fertilizer" />
           </RouterLink>
-          <RouterLink :to="{name: 'BlogPage'}">
+          <RouterLink :to="{ name: 'BlogPage' }">
             <img :src="logoFour" alt="Ceres Agros Fertilizer" />
           </RouterLink>
         </div>
@@ -43,10 +43,10 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import homlogo from '@/assets/img/ceras-agro-logo.png'
-import logoOne from "@/assets/img/logo-one.jpg";
-import logoTwo from "@/assets/img/logo-second.jpg";
-import logoThree from "@/assets/img/logo-Three.jpg";
-import logoFour from "@/assets/img/logo-Four.jpg";
+import logoOne from '@/assets/img/logo-one.jpg'
+import logoTwo from '@/assets/img/logo-second.jpg'
+import logoThree from '@/assets/img/logo-Three.jpg'
+import logoFour from '@/assets/img/logo-Four.jpg'
 </script>
 <style scoped>
 .homePageFour-container {
@@ -114,7 +114,7 @@ import logoFour from "@/assets/img/logo-Four.jpg";
   width: 200px;
 }
 .homepageFour-para-conatiner {
-  width: 400px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,6 +126,11 @@ import logoFour from "@/assets/img/logo-Four.jpg";
   color: #344767;
   font-size: 25px;
   font-weight: 700;
+}
+@media (max-width: 1100px) {
+  .homepageFour-para-conatiner {
+    width: 370px;
+  }
 }
 @media (max-width: 900px) {
   .homePageFour-text-container {

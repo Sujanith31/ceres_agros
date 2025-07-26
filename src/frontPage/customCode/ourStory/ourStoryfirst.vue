@@ -7,8 +7,6 @@
           The journey of Ceres Agros began with a singular belief: Plant science must evolve. As
           farmers grappled with nutrient loss, poor soil response, and unpredictable yields, our
           founders envisioned a fertilizer that could do more — deliver nutrients with intent.
-        </p>
-        <p>
           By merging agronomy with material science, Ceres Agros gave birth to MET — Microphase
           Enrichment Technology, an innovation that changed how nutrients behave in the soil. Each
           granule we manufacture is a product of purpose, designed not just to feed the plant, but
@@ -109,7 +107,7 @@ import ThreePs from '@/assets/img/threePs.jpg'
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   gap: 20px;
   width: 80%;
 }
@@ -188,6 +186,19 @@ import ThreePs from '@/assets/img/threePs.jpg'
   color: #388e3c;
   font-weight: 600;
   font-size: 1.5rem;
+}
+@media (max-width:1250px){
+  .sequence-card-one, .sequence-card-two, .sequence-card-three{
+    width: 90%;
+  }
+  .card-three-text,
+.card-two-text,
+.card-one-text{
+  width: 350px;
+}
+.sequence-cards img {
+  width: 325px;
+}
 }
 @media (max-width: 900px) {
   .HomePage-Container,

@@ -34,7 +34,7 @@
     </div>
     <div class="lastcontainer-buttons">
       <button class="button-one">Tweet</button>
-      <button class="button-two">Share</button>
+      <button class="button-two">Tube</button>
       <button class="button-three">Insta</button>
     </div>
   </div>

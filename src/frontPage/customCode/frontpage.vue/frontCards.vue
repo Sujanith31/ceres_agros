@@ -184,8 +184,9 @@ const isFlipped = ref(false)
   justify-content: center;
   align-items: center;
   gap: 50px;
-  width: 700px;
+  width: 600px;
   color: grey;
+  /* background-color: #344767; */
 }
 .front-rightCard-continer h3 {
   color: #344767;
@@ -193,7 +194,7 @@ const isFlipped = ref(false)
 }
 .frontrightcard-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
 }
@@ -204,7 +205,7 @@ const isFlipped = ref(false)
 }
 .frontrightcard-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
 }

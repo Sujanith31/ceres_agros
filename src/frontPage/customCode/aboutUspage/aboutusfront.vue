@@ -8,8 +8,6 @@
           developed using the groundbreaking Microphase Enrichment Technology (MET). Our
           science-driven solutions are tailored to meet the evolving demands of modern agriculture —
           ensuring higher efficiency, better yields, and sustainable soil health.
-        </p>
-        <p>
           We are not just a fertilizer company. We are a vision, a movement, and a mission — one
           rooted in precision, inspired by performance, and dedicated to progress.
         </p>
@@ -259,7 +257,7 @@ import laptop from "@/assets/img/macbookb.jpg"
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   gap: 20px;
   width: 80%;
 }
@@ -405,6 +403,7 @@ import laptop from "@/assets/img/macbookb.jpg"
 .aboutus-imagecard-container{
     width: 500px;
     color: black;
+    margin-left: 20px ;
 }
 .visinoires-card-container{
     background-color: whitesmoke;
@@ -551,9 +550,16 @@ import laptop from "@/assets/img/macbookb.jpg"
     width: 100% !important;
     gap: 30px !important;
   }
+  .frontrightcard-top, .frontrightcard-bottom{
+    justify-content: space-evenly !important;
+  }
   .aboutus-imagecard-container {
-    width: 100% !important;
+    width: 50% !important;
     margin-top: 30px;
+  }
+  .aboutus-cards-container{
+    justify-content: center !important;
+    align-items: center !important;
   }
   .aboutus-card img {
     width: 100% !important;
@@ -576,6 +582,15 @@ import laptop from "@/assets/img/macbookb.jpg"
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .future-farming-text{
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -609,6 +624,12 @@ import laptop from "@/assets/img/macbookb.jpg"
   .aboutus-content-three {
     width: 100% !important;
     margin-top: 24px !important;
+  }
+  .image-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .frontrightcard-top,
   .frontrightcard-bottom {

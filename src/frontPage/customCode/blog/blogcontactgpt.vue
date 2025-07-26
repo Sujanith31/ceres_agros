@@ -9,13 +9,21 @@
           <div class="contact-details">
             <p><span class="icon">📞</span> +91 9989595959</p>
             <p><span class="icon">✉️</span> hello@ceresagros.co</p>
-            <p><span class="icon">📍</span>8th Floor, Vaishnavi Cymbol, Puppalaguda Road, Hyderabad, Telangana, 500089</p>
+            <p>
+              <span class="icon">📍</span>8th Floor, Vaishnavi Cymbol, Puppalaguda Road, Hyderabad,
+              Telangana, 500089
+            </p>
           </div>
           <div class="contact-social">
-            <a href="#"><span class="icon">🌐</span></a>
-            <a href="#"><span class="icon">🐦</span></a>
-            <a href="#"><span class="icon">🎨</span></a>
-            <a href="#"><span class="icon">📸</span></a>
+            <button class="button-one">Tweet</button>
+            <button class="button-two">Tube</button>
+            <a
+              href="https://www.instagram.com/ceresagros/?igsh=N3ZxaXV1Z3cxZXZr&utm_source=qr"
+              target="_blank"
+            >
+              <button class="button-three">Insta</button>
+            </a>
+            <!-- <a href="#"><span class="icon">📸</span></a> -->
           </div>
         </div>
       </div>
@@ -40,7 +48,7 @@
 </template>
 
 <script setup>
-import bgContact from "@/assets/img/contact-page-image-two.jpg";
+import bgContact from '@/assets/img/contact-page-image-two.jpg'
 </script>
 
 <style scoped>
@@ -52,7 +60,7 @@ import bgContact from "@/assets/img/contact-page-image-two.jpg";
   display: flex;
   max-width: 1100px;
   margin: 0 auto;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
   border-radius: 18px;
   overflow: hidden;
   background: #fff;
@@ -71,7 +79,7 @@ import bgContact from "@/assets/img/contact-page-image-two.jpg";
 .contact-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 .contact-info {
@@ -156,6 +164,29 @@ import bgContact from "@/assets/img/contact-page-image-two.jpg";
 }
 .contact-form-actions button:hover {
   background: #145c32;
+}
+.button-one{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.button-two{
+    background-color: purple;
+    border: none;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.button-three{
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 /* Responsive Styles */

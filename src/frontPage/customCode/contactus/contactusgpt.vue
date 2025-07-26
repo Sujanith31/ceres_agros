@@ -11,10 +11,11 @@
           <p><span class="icon">📍</span>8th Floor, Vaishnavi Cymbol, Puppalaguda Road, Hyderabad, Telangana, 500089</p>
         </div>
         <div class="contactus-social">
-          <a href="#"><span class="icon">🌐</span></a>
-          <a href="#"><span class="icon">🐦</span></a>
-          <a href="#"><span class="icon">🎨</span></a>
-          <a href="#"><span class="icon">📸</span></a>
+          <button class="button-one">Tweet</button>
+      <button class="button-two">Tube</button>
+      <a href="https://www.instagram.com/ceresagros/?igsh=N3ZxaXV1Z3cxZXZr&utm_source=qr" target="_blank">
+      <button class="button-three">Insta</button>
+      </a>
         </div>
       </div>
     </div>
@@ -164,6 +165,30 @@ button[type="submit"]:hover {
 
 .icon {
   margin-right: 8px;
+}
+
+.button-one{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.button-two{
+    background-color: purple;
+    border: none;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.button-three{
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 @media (max-width: 900px) {
