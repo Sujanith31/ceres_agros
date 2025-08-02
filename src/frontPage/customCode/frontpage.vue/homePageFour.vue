@@ -105,7 +105,7 @@ import logoFour from '@/assets/img/logo-Four.jpg'
 .homepageFour-image-topc,
 .homepageFour-image-bottomc {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 90%;
 }
@@ -202,6 +202,23 @@ import logoFour from '@/assets/img/logo-Four.jpg'
   }
   .homepageFour-para-conatiner h3 {
     font-size: 1rem !important;
+  }
+}
+@media (max-width:500px){
+  .homepageFour-image-topc img, .homepageFour-image-bottomc img{
+    /* max-width: 375px !important; */
+    width: 90% !important;
+    margin-left: 5%;
+    border-radius: 10px;
+    /* align-items: center !important; */
+    /* flex-direction: column !important; */
+  }
+  .homepageFour-image-topc, .homepageFour-image-bottomc{
+    align-items: center !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 100% !important;
+    /* background-color: #0f9d58; */
   }
 }
 </style>

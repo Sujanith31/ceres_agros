@@ -172,7 +172,7 @@ import ThreePs from '@/assets/img/threePs.jpg'
 .sequence-card-two,
 .sequence-card-three {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 80%;
 }
@@ -219,20 +219,22 @@ import ThreePs from '@/assets/img/threePs.jpg'
   .sequence-cards {
     padding-top: 24px;
     padding-bottom: 24px;
+    justify-content: center;
   }
   .sequence-card-one,
   .sequence-card-three {
-    flex-direction: column !important;
+    /* flex-direction: column !important; */
+    justify-content: center !important;
     width: 98% !important;
     gap: 18px;
-    align-items: flex-start !important;
+    align-items: center !important;
     margin-bottom: 32px;
   }
   .sequence-card-two{
-    flex-direction: column-reverse !important;
+    /* flex-direction: column-reverse !important; */
     width: 98% !important;
     gap: 18px;
-    align-items: flex-start !important;
+    align-items: center !important;
     margin-bottom: 32px;
   }
   .sequence-cards img {
@@ -244,9 +246,33 @@ import ThreePs from '@/assets/img/threePs.jpg'
   .card-three-text,
   .card-two-text,
   .card-one-text {
-    width: 100% !important;
+    width: 50% !important;
     font-size: 1rem;
     padding: 0;
+  }
+}
+@media (max-width: 700px) {
+    .sequence-card-one,
+  .sequence-card-three {
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 98% !important;
+    gap: 18px;
+    align-items: center !important;
+    margin-bottom: 32px;
+  }
+  .sequence-card-two{
+    flex-direction: column-reverse !important;
+    width: 98% !important;
+    gap: 18px;
+    align-items: center !important;
+    margin-bottom: 32px;
+  }
+  .card-three-text,
+  .card-two-text,
+  .card-one-text {
+    font-size: 0.98rem;
+    width: 80% !important;
   }
 }
 
@@ -275,6 +301,7 @@ import ThreePs from '@/assets/img/threePs.jpg'
   .card-two-text,
   .card-one-text {
     font-size: 0.98rem;
+    width: 100% !important;
   }
 }
 </style>
